@@ -1,0 +1,2 @@
+-- List values of scores equal to or greater that ten
+SELECT score, name FROM second_table WHERE score >= 10 ORDER BY score DESC;
