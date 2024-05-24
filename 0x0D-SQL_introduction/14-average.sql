@@ -1,2 +1,2 @@
--- create table statement
-SHOW CREATE TABLE first_table;
+-- select avrg
+SELECT AVG(score) AS average FROM second_table;
