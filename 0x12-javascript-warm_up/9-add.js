@@ -1,5 +1,6 @@
 #!/usr/bin/node
-function addIntegers(num1, num2) {
-  return num1 + num2;
+function add (a,b) {
+const c = a+b;
+console.log(c);
 }
-console.log(addIntegers(Number(process.argv[2]), Number(process.argv[3])));
+add(Number(process.argv[2]), Number(process.argv[3]));
