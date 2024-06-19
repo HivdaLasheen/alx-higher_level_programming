@@ -1,6 +1,14 @@
 #!/usr/bin/node
-function addIntegers(num1, num2) {
-  return num1 + num2;
+
+function add(a, b) {
+  return a + b;
 }
 
-console.log(addIntegers(Number(process.argv[2]), Number(process.argv[3])));
+const firstInteger = Number(process.argv[2]);
+const secondInteger = Number(process.argv[3]);
+
+if (isNaN(firstInteger) || isNaN(secondInteger)) {
+  console.log('Arguments are not valid integers');
+} else {
+  console.log(`The addition of ${firstInteger} and ${secondInteger} is: ${add(firstInteger, secondInteger)}`);
+}
